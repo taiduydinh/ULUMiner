@@ -1,0 +1,101 @@
+city,city_key,pretty_city,cluster,UMAP1,UMAP2,x_plot,y_plot,image_path
+AUGSBURG,AUGSBURG,Augsburg,1,1.0680801,12.139926,1.190515878092263,12.020418742687248,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Augsburg.jpg
+AVILA,AVILA,Ávila,2,2.613941,11.060328,2.6706458593102864,11.239256001501436,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Avila.jpg
+BAMBERG,BAMBERG,Bamberg,1,2.443084,13.236767,2.619706815707749,13.145627620701983,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Bamberg.jpg
+BANSKA_BYSTRICA,BANSKA_BYSTRICA,Banská Bystrica,1,0.8260525,12.963538,0.9711666275687267,13.056955064191612,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Banska_Bystrica.jpg
+BARLETTA,BARLETTA,Barletta,2,4.974484,11.660747,4.938447821283853,11.630630964883336,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Barletta.jpg
+BASEL,BASEL,Basel,4,3.7701945,14.421904,3.8175400169144327,14.38705916422144,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Basel.jpg
+BEAUVAIS,BEAUVAIS,Beauvais,5,5.855354,13.896885,5.917804139059742,14.00144735799464,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Beauvais.jpg
+BERN,BERN,Bern,4,3.880999,14.646898,4.147929163046656,14.631430049961066,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Bern.jpg
+BIELSKO_BIALA,BIELSKO_BIALA,Bielsko Biala,5,5.7531466,13.848609,5.757462724557382,13.749820626968702,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Bielsko_Biala.jpg
+BURNLEY,BURNLEY,Burnley,1,2.7927055,14.185595,2.730099907543422,14.071962343145666,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Burnley.jpg
+CALAIS,CALAIS,Calais,6,4.030059,12.375939,3.9048081015413,12.35723383252531,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Calais.jpg
+CAMBRIDGE,CAMBRIDGE,Cambridge,4,3.5259085,15.137345,3.621903617569647,15.079326452255248,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Cambridge.jpg
+CELLE,CELLE,Celle,6,4.6273084,13.248732,4.71088119672693,13.238236184967128,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Celle.jpg
+CESKE_BUDEJOVICE,CESKE_BUDEJOVICE,České Budějovice,1,1.395754,11.886046,1.519337016960625,11.860501225444695,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Ceske_Budejovice.jpg
+CHALONS_EN_CHAMPAGNE,CHALONS_EN_CHAMPAGNE,Châlons-en-Champagne,1,2.0237205,12.614761,2.1258283177787143,12.622392407840518,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Chalons_en_Champagne.jpg
+CHELTENHAM,CHELTENHAM,Cheltenham,4,3.311897,14.898458,3.2512378257799925,14.826745279725923,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Cheltenham.jpg
+COSENZA,COSENZA,Cosenza,7,6.2814484,13.856056,6.184195097221932,13.755614622443137,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Cosenza.jpg
+DROBETA_TURNU_SEVERIN,DROBETA_TURNU_SEVERIN,Drobeta-Turnu Severin,3,3.1845767,11.569524,3.1541837583871035,11.643105693941019,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\DROBETA_TURNU_SEVERIN.jpg
+DUNDEE_CITY,DUNDEE_CITY,Dundee City,4,3.358015,15.032704,3.420033038287261,14.969808223783659,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Dundee_City.jpg
+ELBLAG,ELBLAG,Elblag,1,1.5898219,12.472114,1.7791757156194887,12.431473256236995,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Elblag.jpg
+ENSCHEDE,ENSCHEDE,Enschede,6,5.007245,12.934977,5.043191202547801,12.99736837173354,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Enschede.jpg
+FARO,FARO,Faro,6,5.1440263,12.173343,5.319944003195619,12.24023278208045,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Faro.jpg
+FOGGIA,FOGGIA,Foggia,2,5.0200157,11.538616,5.2114136410859695,11.40600950718635,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Foggia.jpg
+FULDA,FULDA,Fulda,6,4.435063,12.361821,4.574450354279632,12.370786165830905,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Fulda.jpg
+GALWAY,GALWAY,Galway,1,2.1408615,12.169056,2.2415662726248797,12.230427538760058,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Galway.jpg
+GERA,GERA,Gera,5,5.440876,13.773251,5.495330895887295,13.973924341636673,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Gera.jpg
+GLOGOW,GLOGOW,Glogow,1,2.827814,13.313617,2.936681373243539,13.396672202034297,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Glogow.jpg
+GNIEZNO,GNIEZNO,Gniezno,3,3.4946249,11.803731,3.452055496877948,11.897127155666086,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Gniezno.jpg
+GOUDA,GOUDA,Gouda,1,2.483383,13.950852,2.3996942129114065,13.837222386966397,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Gouda.jpg
+GUIMARAES,GUIMARAES,Guimaraes,5,5.790673,13.41167,5.836900291661288,13.287582281224626,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Guimaraes.jpg
+HASTINGS,HASTINGS,Hastings,4,3.705578,14.816236,3.8705927176153248,14.867550886221762,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Hastings.jpg
+HRADEC_KRALOVE,HRADEC_KRALOVE,Hradec Králové,1,1.2504003,12.4616,1.2998791149779914,12.439761146532204,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Hradec_Kralove.jpg
+INNSBRUCK,INNSBRUCK,Innsbruck,4,3.5639038,14.140904,3.559148401577272,14.10501056462983,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Innsbruck.jpg
+IOANNINA,IOANNINA,Ioannina,1,2.2779195,11.812748,2.3444515338683996,11.841113025125884,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Ioannina.jpg
+IRUN,IRUN,Irun,6,4.5835557,13.043332,4.559240249746323,13.056668310451194,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Irun.jpg
+KARLOVY_VARY,KARLOVY_VARY,Karlovy Vary,1,1.6140393,13.36064,1.586188938094663,13.443847650908596,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Karlovy_Vary.jpg
+KECSKEMET,KECSKEMET,Kecskemet,6,5.461998,12.592879,5.654787614082633,12.529432105803384,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Kecskemet.jpg
+KORTRIJK,KORTRIJK,Kortrijk,6,4.0215116,11.8122225,3.9910151680696972,11.858701777211072,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Kortrijk.jpg
+KUOPIO,KUOPIO,Kuopio,7,6.835829,13.7718525,6.67605708826781,13.826442448059595,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\kuopio.jpg
+LARISA,LARISA,Larisa,2,2.0753284,11.05576,2.093495673626244,11.113810041598319,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Larisa.jpg
+LEMESOS,LEMESOS,Lemesos,3,3.5330193,11.434272,3.503420462824304,11.376984018004508,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Lemesos.jpg
+LE_MANS,LE_MANS,le Mans,6,4.560383,12.80762,4.394630883837879,12.882213926634932,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Le_Mans.jpg
+LIBEREC,LIBEREC,Liberec,1,1.924168,12.822541,1.8951509253406882,12.857977517183286,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Liberec.jpg
+LIEPAJA,LIEPAJA,Liepaja,1,1.3948735,11.399374,1.2073313762935616,11.295067467235704,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Liepaja.jpg
+LINCOLN,LINCOLN,Lincoln,4,2.965004,14.994953,2.6973489807879854,14.887531921634169,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Lincoln.jpg
+LIVORNO,LIVORNO,Livorno,6,4.8449054,12.787754,4.720455355997848,12.7070060551276,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Livorno.jpg
+LJUBLJANA,LJUBLJANA,Ljubljana,4,4.3270626,13.420005,4.359860745118414,13.455909946842073,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Ljubljana.jpg
+LUBECK,LUBECK,Lubeck,4,3.8106124,13.135842,3.810612406944167,13.13584230410398,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Lubeck.jpg
+LUXEMBOURG,LUXEMBOURG,Luxembourg,1,1.7716565,13.01895,1.649001759044625,13.112464479762055,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Luxembourg.jpg
+MAASTRICHT,MAASTRICHT,Maastricht,1,2.41937,12.851407,2.382576410038107,12.877144765823317,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Maastricht.jpg
+MANRESA,MANRESA,Manresa,2,2.290836,10.9360485,2.29678787456687,11.011994539260865,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Manresa.jpg
+MARIBOR,MARIBOR,Maribor,7,6.4369354,13.540536,6.430483915015866,13.490172710295369,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Maribor.jpg
+MARTIGUES,MARTIGUES,Martigues,7,5.3893995,14.228162,5.213891194190906,14.254971759489678,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Martigues.jpg
+MODENA,MODENA,Modena,6,4.7407403,11.843464,4.646261795440706,11.839190264565623,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Modena.jpg
+MOSTAR,MOSTAR,Mostar,3,3.438121,11.328639,3.238024177836187,11.142370008556858,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Mostar.jpg
+NARVA,NARVA,Narva,4,3.8062947,14.15172,4.033424230820863,14.169293584354772,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Narva.jpg
+NEUMUNSTER,NEUMUNSTER,Neumunster,4,4.2411513,14.072977,4.370444166995416,13.960900593012706,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Neumunster.jpg
+NEWPORT,NEWPORT,Newport,4,4.162175,13.633967,4.026332986254657,13.69273387888083,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Newport.jpg
+NITRA,NITRA,Nitra,1,0.9215664,12.341325,0.9590399139111112,12.213483088714082,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Nitra.jpg
+NORRKOPING,NORRKOPING,Norrköping,7,6.851943,13.690082,6.739429870009422,13.66499847428565,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Norrkoping.jpg
+NOVI_SAD,NOVI_SAD,Novi Sad,1,2.567052,11.995667,2.6664722378841383,12.087487302305973,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Novi Sad.jpg
+NYIREGYHAZA,NYIREGYHAZA,Nyíregyháza,6,5.198943,12.577087,5.032214126898794,12.49371679067518,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Nyiregyhaza.jpg
+ODENSE,ODENSE,Odense,6,5.195844,12.857017,5.342364329206048,12.784793667454174,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Odense.jpg
+OLOMOUC,OLOMOUC,Olomouc,1,0.76135206,12.464024,0.7817559015892744,12.407433889744965,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Olomouc.jpg
+OOSTENDE,OOSTENDE,Oostende,1,1.7374933,11.421929,1.6957861144017878,11.373844923390449,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Oostende.jpg
+ORLEANS,ORLEANS,Orleans,1,1.4508908,12.332014,1.53351526842824,12.218881229627549,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Orleans.jpg
+OSNABRUCK,OSNABRUCK,Osnabruck,6,4.873475,13.264726,4.925804833784928,13.437401292092035,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Osnabruck.jpg
+OVIEDO,OVIEDO,Oviedo,7,6.2106075,14.089659,6.220105549632322,14.259325131036059,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Oviedo.jpg
+PABIANICE,PABIANICE,Pabianice,1,2.020943,12.029174,1.9202330283387945,11.967811037403632,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Pabianice.jpg
+PALENCIA,PALENCIA,Palencia,1,2.2548635,13.409708,2.2590239865279687,13.40980852612389,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Palencia.jpg
+PANEVEZYS,PANEVEZYS,Panevėžys,1,1.3071643,11.646902,1.1639825222529354,11.686959888032515,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Panevezys.jpg
+PARDUBICE,PARDUBICE,Pardubice,1,1.2599683,12.871906,1.3374400674845202,12.82613650091642,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Pardubice.jpg
+PARMA,PARMA,Parma,3,3.8527715,11.438924,3.9919305609789584,11.342919109667765,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Parma.jpg
+PASSAU,PASSAU,Passau,5,5.6207204,13.665855,5.486511579333463,13.516747489476888,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Passau.jpg
+PAVIA,PAVIA,Pavia,6,4.3450375,12.656215,4.190839378139968,12.627405934006646,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Pavia.jpg
+PERPIGNAN,PERPIGNAN,Perpignan,2,2.6075969,11.041595,2.504438988074215,11.106752664482807,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Perpignan.jpg
+PERUGIA,PERUGIA,Perugia,7,6.4634433,13.247837,6.398840738337482,13.101233790754357,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Perugia.jpg
+PESARO,PESARO,Pesaro,7,6.6227117,13.403439,6.739429870009422,13.318386191531282,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Pesaro.jpg
+PILA,PILA,Pila,1,3.1068153,13.0852995,3.1068257659733995,13.085295269257035,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Pila.jpg
+PLAUEN,PLAUEN,Plauen,5,5.118595,13.658464,5.168637895320865,13.72866039552435,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Plauen.jpg
+PLOVDIV,PLOVDIV,Plovdiv,1,1.4915651,11.446901,1.482352474359712,11.534782679215846,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Plovdiv.jpg
+PLZEN,PLZEN,Plzeň,1,0.6709179,12.648526,0.7715374377897979,12.841178490300745,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Plzen.jpg
+PODGORICA,PODGORICA,Podgorica,4,3.0756795,14.294317,3.027112317810452,14.24609580179807,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Podgorica.jpg
+PRESOV,PRESOV,Prešov,1,1.0823596,12.554457,1.058428783524795,12.57992716023947,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Presov.jpg
+PRILEP,PRILEP,Prilep,1,2.1996422,11.618825,2.057913559676887,11.609867447650126,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Prilep.jpg
+PRISTINA,PRISTINA,Priština,3,3.6718466,11.54528,3.727222307241871,11.610268102549965,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\PRISTINA.jpg
+REYKJAVIK,REYKJAVIK,Reykjavik,4,3.258747,14.829501,3.002762874717612,14.638445812686886,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Reykjavik.jpg
+RIJEKA,RIJEKA,Rijeka,1,1.8179271,13.493584,1.9005663796281924,13.67404774042153,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Rijeka.jpg
+SALZBURG,SALZBURG,Salzburg,4,3.3899906,14.32807,3.2982195414605804,14.39450925844134,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Salzburg.jpg
+SATU_MARE,SATU_MARE,Satu Mare,6,4.308946,11.802014,4.3308557755229895,11.61505852866024,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Satu_Mare.jpg
+SHKODER,SHKODER,Shkoder,6,3.6111753,12.643564,3.5580819415663116,12.64944355781086,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\shkoder.jpg
+STAVANGER,STAVANGER,Stavanger,4,3.5212395,14.661059,3.554908558645718,14.623918391287784,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Stavanger.jpg
+TARBES,TARBES,Tarbes,6,4.2333293,11.883299,4.273745329702578,12.080221665534838,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Tarbes.jpg
+TOLEDO,TOLEDO,Toledo,2,2.6715438,11.1633,2.8659082583036746,11.399103481920548,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Toledo.jpg
+TULCEA,TULCEA,Tulcea,2,5.0235043,11.986792,4.991608739147223,12.028570418389984,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Tulcea.jpg
+USTI_NAD_LABEM,USTI_NAD_LABEM,Ústí nad Labem,1,1.1755406,13.28664,1.2569630932676672,13.258029272077033,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Usti_Nad_Labem.jpg
+VALLETTA,VALLETTA,Valletta,1,1.9195802,11.2569275,1.899891635282044,11.246585367948958,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Valletta.jpg
+VASTERAS,VASTERAS,Västerås,7,6.7656302,13.856235,6.52747286533756,14.016997134916629,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Vasteras.jpg
+WORCESTER,WORCESTER,Worcester,4,3.0929413,15.1552725,2.9992723074952528,15.079326452255248,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Worcester.jpg
+ZILINA,ZILINA,Žilina,1,0.6012127,12.615848,0.713725826382637,12.69405727933466,c:\Users\it08d\OneDrive - kcg.ac.jp\Downloads\JPER_v3_Notebook_Patch\figures\Zilina.jpg

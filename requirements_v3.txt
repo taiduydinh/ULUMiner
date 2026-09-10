@@ -1,0 +1,17 @@
+# Environment recorded in the final v3 run used for the manuscript reference outputs
+# Python 3.10.15 is recommended for the closest reproduction.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+seaborn==0.13.2
+openpyxl==3.1.5
+umap-learn==0.5.7
+
+# Optional final city-thumbnail UMAP (only needed when cities/ is present)
+Pillow>=10,<13
+
+# Notebook interface
+jupyterlab>=4.4,<5
+ipykernel>=6.29,<7

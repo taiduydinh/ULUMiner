@@ -1,0 +1,7 @@
+file,bytes,has_pdf_header,has_eof_marker,valid_basic_pdf_structure
+exact_support_threshold_sensitivity.pdf,16361,True,True,True
+historical_olomouc_buffer_calibration.pdf,17847,True,True,True
+primary_dendrogram.pdf,26089,True,True,True
+primary_distance_heatmap.pdf,188758,True,True,True
+transaction_rural_signal_by_cluster.pdf,20302,True,True,True
+umap_visualization_original_space_labels.pdf,31031,True,True,True

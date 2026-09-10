@@ -1,0 +1,9 @@
+requested_input_or_test,available,evidence_or_limit
+Raw one-row-per-focal-polygon transactions for 100 cities,True,"100 text files; 290,396 rows"
+Exact support thresholds,True,Re-mined directly from transaction IDs at five thresholds
+Repeated transaction-pattern multiplicity,True,"203,805 repeated occurrences retained"
+Within-neighborhood same-type neighbor multiplicity,False,Duplicate codes were removed upstream; all parsed rows contain unique codes
+Polygon area or shared-boundary/contact weighting,False,"No polygon IDs, geometry, area, contact length, orientation, or overlap extent"
+Alternative-buffer transaction outputs across cities,False,No alternative-buffer folder/file name found; only historical thesis figure/table
+GIS source layer or ArcGIS toolbox,False,"The thesis lists external attachments, but they are absent from this archive"
+Paired official Core and full-FUA data,False,Thesis documents Core clipping; no paired spatial or transaction specifications

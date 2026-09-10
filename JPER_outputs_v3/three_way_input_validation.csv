@@ -1,0 +1,6 @@
+check,result
+Cities with exact negFIN match,100
+Total exact support-count discrepancies,0
+10% union itemsets,1543
+Legacy matrix maximum absolute difference,0.0
+"Feature silently dropped by old .iloc[:, 1:] code",11100

@@ -1,0 +1,10 @@
+buffer_m,mean_transaction_length,median_transaction_length,source,status
+10,4.26923077,4,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+25,4.55649038,4,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+50,4.92908654,5,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+75,5.29206731,5,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+100,5.65444712,5,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+125,5.98918269,6,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+150,6.2890625,6,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+175,6.55649038,6,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"
+200,6.83653846,7,"Novak thesis, Table 5; historical Olomouc experiment","documentary calibration, not rerun from the uploaded archive"

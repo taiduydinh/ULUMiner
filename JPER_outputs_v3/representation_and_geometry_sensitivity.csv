@@ -1,0 +1,12 @@
+analysis,ari_vs_primary,nmi_vs_primary,pairwise_distance_spearman_vs_primary,silhouette,minimum_cluster_size,maximum_cluster_size,note
+"Primary: exact relative support, L2 rows, Ward",1.0,1.0,0.9999999999999999,0.1212874959725044,6,35,Original city-by-itemset feature space
+"Saved integer-percent supports, L2 rows, Ward",0.9675152989816664,0.9757380508354353,0.9999811740661944,0.11983437910700907,6,36,"Tests rounding in the legacy 1,543-column matrix"
+"Binary frequent-itemset presence, L2 rows, Ward",0.2864590493743305,0.5718117711138642,0.9369394077073334,0.06266284135497138,6,29,Removes support magnitude across focal polygons
+"Absolute support counts, L2 rows, Ward",1.0,1.0,0.9999999999999999,0.12128749597250435,6,35,Equivalent to relative support after row-wise L2 normalization
+"Exact relative support without row normalization, Ward",0.8597277851723271,0.8692631352572603,0.8755749402614735,0.12228206753385691,2,35,Tests the row-normalization assumption
+"Exact support, cosine distance, average linkage",0.5024991399720744,0.6440642169448052,0.9999999999999999,0.17081002475727375,1,46,Ward is not valid for cosine distance
+PCA 90% + Ward,0.8192728730457307,0.8378485529257066,0.9990428773915028,0.15346020792954018,6,37,31 components retained
+PCA 95% + Ward,0.8417307699513277,0.8378761172212662,0.999634054691913,0.14544489692753498,6,35,49 components retained
+Exclude all itemsets containing other-roads code 12220,0.7479079134692177,0.7837915551483089,0.997485477408948,0.12012814253114187,5,34,Uses 782 of 1543 features
+"Artificial-only itemsets, excluding every rural/natural code",0.291184118860233,0.4988359262386402,0.8263110667226475,0.14435012587526563,3,22,Uses 444 of 1543 features
+"One vote per unique transaction pattern, L2 rows, Ward",0.302141391616423,0.4908129082993518,0.8595114846584967,0.09665055578466993,3,26,"Deliberately removes 203,805 repeated focal-neighborhood occurrences"

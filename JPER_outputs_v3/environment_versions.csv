@@ -1,0 +1,9 @@
+package,version,validated_pin,matches_validated_pin
+numpy,2.2.6,2.5.2,False
+pandas,2.3.3,2.2.3,False
+scipy,1.15.3,1.18.1,False
+scikit-learn,1.7.2,1.9.0,False
+matplotlib,3.10.9,3.10.8,False
+seaborn,0.13.2,0.13.2,True
+openpyxl,3.1.5,3.1.5,True
+umap-learn,0.5.7,0.5.9.post2,False

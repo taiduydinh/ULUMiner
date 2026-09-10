@@ -1,0 +1,4 @@
+metric,kruskal_h,p_value,eta_squared_descriptive,interpretation_scope,holm_adjusted_p
+mean_nonartificial_types_per_transaction,51.99067185289965,1.8728891165054712e-09,0.5656249625677547,Exploratory/descriptive only: metric and cluster labels derive from the same transaction dataset,5.618667349516413e-09
+share_transactions_with_nonartificial,50.03410881553444,4.627630810359136e-09,0.4547738437750496,Exploratory/descriptive only: metric and cluster labels derive from the same transaction dataset,9.255261620718272e-09
+share_transactions_nonartificial_only,15.068797163927956,0.019728324220669367,0.22350058617728535,Exploratory/descriptive only: metric and cluster labels derive from the same transaction dataset,0.019728324220669367

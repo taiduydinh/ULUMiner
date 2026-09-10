@@ -1,0 +1,2 @@
+measure,value,permutations,permutation_p_value,interpretation
+Cramer's V,0.6931579353079811,5000,0.0001999600079984003,Descriptive association only; sparse national samples and no institutional covariates

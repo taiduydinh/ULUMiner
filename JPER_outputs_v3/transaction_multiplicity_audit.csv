@@ -1,0 +1,6 @@
+quantity,value
+Maximum absolute difference: L2 exact-relative versus L2 absolute-count rows,2.7755575615628914e-16
+Total raw transaction rows,290396.0
+Total distinct transaction patterns within cities,86591.0
+Repeated transaction occurrences retained by standard support,203805.0
+Duplicate codes within rows available for weighting,0.0

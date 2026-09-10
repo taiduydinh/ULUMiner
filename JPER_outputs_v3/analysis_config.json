@@ -1,0 +1,39 @@
+{
+  "notebook_version": "v3",
+  "source_v2_notebook_sha256": "d8b1f635d08b182f3048b84f451b6a9d525404b64123aac5be2d4ba7722be43b",
+  "archive_file": "Dobesova-Tai.zip",
+  "archive_sha256": "9dd2d9b9422c9e8647942101d51ef184bd4c40462b7108d9c6a68fdf96c93774",
+  "summary_file_sha256": "6328755dc42599bc9339db39ef3b068d1ce86dddefee98662c3cee7ad91c5b07",
+  "main_support_threshold_percent": 10.0,
+  "support_thresholds_percent": [
+    5.0,
+    7.5,
+    10.0,
+    12.5,
+    15.0
+  ],
+  "candidate_k": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "main_k_for_manuscript_comparison": 7,
+  "random_seed": 2026,
+  "feature_bootstraps": 500,
+  "feature_stability_design": "paired repeated feature subsampling; same sampled columns evaluated for every candidate k",
+  "feature_subsample_fraction": 0.8,
+  "primary_geometry": "exact relative supports; L2-normalized city rows; Ward linkage on original features",
+  "data_ranked_k": 7,
+  "primary_k_used": 7,
+  "raw_transaction_rows": 290396,
+  "distinct_transaction_patterns_within_cities": 86591,
+  "exact_10_percent_itemsets": 1543,
+  "umap_runs_completed": 54,
+  "environment_matches_all_validated_pins": false
+}
