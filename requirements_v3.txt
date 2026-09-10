@@ -1,5 +1,6 @@
-# Environment recorded in the final v3 run used for the manuscript reference outputs
+# Environment recorded in the final v3 manuscript run
 # Python 3.10.15 is recommended for the closest reproduction.
+
 numpy==2.2.6
 pandas==2.3.3
 scipy==1.15.3
@@ -9,9 +10,11 @@ seaborn==0.13.2
 openpyxl==3.1.5
 umap-learn==0.5.7
 
-# Optional final city-thumbnail UMAP (only needed when cities/ is present)
+# City-thumbnail UMAP
 Pillow>=10,<13
 
 # Notebook interface
 jupyterlab>=4.4,<5
 ipykernel>=6.29,<7
+
+# negFIN.py itself uses only the Python standard library.

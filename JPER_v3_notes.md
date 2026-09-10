@@ -1,57 +1,77 @@
-# Public repository portability update — 2026-09-10
+# JPER v3 public reproducibility notes
 
-The distributed notebook source was updated for the final GitHub layout while preserving all embedded outputs from the authors' final manuscript run. No scientific analysis was re-executed for this portability edit.
+Updated: 2026-09-10
 
-- Reads transactions directly from `inputs/`.
-- Reads saved negFIN results directly from `neqFin_outputs/` (with conventional spelling fallbacks).
-- Reads `summary_all_cities.xlsx` from the repository root.
-- Verifies deterministic directory signatures for the 100 transaction files and 100 saved negFIN files.
-- Protects `JPER_outputs_v3/` as read-only reference outputs; fresh runs write to `JPER_reproduced_outputs_v3/`.
-- Compares key reproduced CSV results with the included manuscript reference outputs at the end of a run.
-- Uses `cities/` for the city-thumbnail UMAP. If that folder is omitted in another copy of the repository, the numerical analysis still completes and the optional thumbnail figure is skipped cleanly.
-- `requirements_v3.txt` now reflects the package versions recorded in the retained final v3 manuscript run.
+## Current public repository layout
 
----
+The public notebook uses these names:
 
-# JPER v3 notebook patch notes
+- `inputs/`
+- `neqFin_outputs/`
+- `JPER_outputs_v3/`
+- `cities/`
+- `JPER_v3.ipynb`
+- `JPER_v3_notes.md`
+- `negFIN.py`
+- `requirements_v3.txt`
+- `summary_all_cities.xlsx`
 
-Prepared: 2026-09-05
+A fresh run writes only to `JPER_reproduced_outputs_v3/`.
 
-## File
+## 2026-09-10 negFIN integration update
 
-`JPER_v3.ipynb`
+The useful beginning of the earlier `Euro_analysis.ipynb` showed how `negFIN.py` was run for each transaction dataset and how the all-city support matrix was assembled. That functionality has now been integrated into `JPER_v3.ipynb`, but adapted to the current repository layout and the corrected v3 analysis.
 
-Derived from authoritative v2 notebook SHA-256:
-`d8b1f635d08b182f3048b84f451b6a9d525404b64123aac5be2d4ba7722be43b`
+The new public workflow:
 
-## Scientific/reproducibility corrections
+1. reads the 100 transaction files directly from `inputs/`;
+2. loads a fresh copy of `negFIN.py` for each city, preventing module-level state from carrying between datasets;
+3. runs negFIN at the primary relative support threshold `0.10`;
+4. writes fresh results to `JPER_reproduced_outputs_v3/negFIN_outputs_10pct/`;
+5. reconstructs `summary_all_cities_from_negFIN_10pct.xlsx` from negFIN's rounded `%:` field;
+6. reconstructs an exact support matrix from negFIN's `#SUP:` integer counts;
+7. independently re-mines the transactions using Eclat at 5%, 7.5%, 10%, 12.5%, and 15%;
+8. requires the independent 10% support counts to match the fresh negFIN outputs exactly; and
+9. compares fresh results with the archived `neqFin_outputs/` and `summary_all_cities.xlsx` when those references are present.
 
-1. Corrects the UMAP nearest-neighbor overlap helper so it evaluates the nearest 10 *other* cities, not neighbors ranked 2–11.
-2. Replaces the v2 50-run, unpaired-by-k feature perturbation design with 500 paired 80%-feature perturbations. Each sampled feature subset is reused across every k=2...10.
-3. Preserves k=7 as the primary solution under the declared equal-weight composite ranking, while explicitly reporting that k=6 and k=7 are nearly tied in feature stability.
-4. Seeds rural plot jitter deterministically.
-5. Labels rural-content Kruskal-Wallis p-values as exploratory/descriptive because the metrics and clusters derive from the same transactions.
-6. Adds input checksum guards for the authoritative source archive and summary workbook.
-7. Adds warnings when installed package versions differ from the validated pins.
-8. Adds `umap_overall_diagnostic_ranges.csv` for corrected 54-run ranges.
-9. Adds `primary_feature_stability_paired_runs.csv` and `primary_feature_subsample_plan.csv` for auditability.
-10. Adds generated-PDF integrity checks and verifies the non-self output manifest after writing it.
-11. Adds modern notebook cell IDs and clears stale v2 execution outputs.
-12. Adds manuscript reporting warnings covering sampling provenance, negFIN complexity notation, buffer/transaction-count wording, and the exploratory status of same-data cluster tests.
+The old UMAP/HAC workflow from `Euro_analysis.ipynb` was **not** imported. The v3 notebook continues to use Ward clustering directly in the original exact-support feature space and UMAP only for visualization and diagnostics.
 
-## Independently checked during construction
+## Functional validation of the added negFIN stage
 
-- Notebook format: nbformat 4.5.
-- 34 total cells, 20 code cells.
-- All cell IDs present and unique.
-- All 20 code cells compile successfully.
-- Authoritative source archive checksum passes.
-- Authoritative summary workbook checksum passes.
-- 100 cities and 290,396 transaction rows reproduce.
-- Exact 10% matrix contains 1,543 itemsets.
-- Zero discrepancies against all saved negFIN outputs.
-- Primary seven-cluster sizes remain 35, 8, 6, 18, 6, 18, 9.
-- 500 paired stability means independently reproduced: k=6 = 0.7615964014; k=7 = 0.7601263447.
-- With the revised stability term, k=7 remains the best eligible equal-weight composite rank (3.50), but is not uniquely the stability winner.
+The new negFIN-generation stage was tested against the repository inputs without re-running the full manuscript experiment.
 
-A full 54-run UMAP execution was not performed in the construction container because the pinned `umap-learn==0.5.9.post2` environment is not installed there. Run the notebook under the package's pinned environment for final corrected UMAP ranges.
+Observed checks:
+
+- transaction files processed: 100;
+- fresh negFIN output files generated: 100;
+- total city-itemset results at 10%: 17,847;
+- union of 10% itemsets: 1,543;
+- fresh negFIN vs archived `neqFin_outputs/`: 100/100 cities matched by parsed itemset, exact support count, and rounded percentage;
+- fresh rounded negFIN summary vs `summary_all_cities.xlsx`: maximum absolute difference `0.0`;
+- fresh exact negFIN support matrix vs independent Eclat 10% matrix: maximum absolute difference `0.0`;
+- all notebook code cells pass static Python compilation.
+
+The complete clustering/stability/UMAP experiment was not re-executed for this notebook-editing step; the existing embedded manuscript-run outputs were preserved.
+
+## Scientific v3 corrections retained
+
+The notebook retains the final v3 analytical design:
+
+1. clustering is performed directly in the original 1,543-dimensional exact-support feature space after row-wise L2 normalization;
+2. UMAP is used only for visualization and diagnostics;
+3. the corrected nearest-10 UMAP overlap excludes each city itself;
+4. cluster-number evaluation uses 500 paired 80%-feature subsampling repetitions;
+5. `k=7` is retained by the declared equal-weight composite ranking, while `k=6` and `k=7` are described as nearly tied in feature stability;
+6. exact support sensitivity is evaluated at 5%, 7.5%, 10%, 12.5%, and 15%;
+7. representation tests include integer rounding, binary presence, counts, no row normalization, cosine/average linkage, PCA, removal of itemsets containing road code `12220`, artificial-only itemsets, and one vote per unique transaction pattern;
+8. non-artificial transaction measures are interpreted descriptively rather than as land-area shares;
+9. country-cluster association is treated as descriptive/hypothesis-generating rather than causal; and
+10. unavailable geometry, same-class multiplicity, multi-buffer, and Core-versus-FUA tests are not claimed.
+
+## Reference and fresh output separation
+
+`JPER_outputs_v3/` contains the final results used in the manuscript. It is protected from overwrite by the notebook.
+
+`JPER_reproduced_outputs_v3/` is a disposable fresh-run directory. It is deleted and recreated at the beginning of each Run All.
+
+The final notebook writes `reference_reproduction_check.csv` and `output_manifest.csv` for auditability.

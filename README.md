@@ -1,119 +1,197 @@
 # ULUMiner — JPER v3 reproducibility package
 
-This repository contains the inputs, code, notebook, city-map images, and final reference outputs supporting the revised manuscript **“Exploring Urban Land Use Patterns by Pattern Mining and Unsupervised Learning.”**
+This repository contains the inputs, code, final reference outputs, and notebook supporting the revised manuscript **“Exploring Urban Land Use Patterns by Pattern Mining and Unsupervised Learning.”**
 
-## Quick start
+The public notebook is designed so that a user can start from the transaction files, run the included negFIN implementation, reconstruct the primary frequent-itemset representation, and reproduce the subsequent clustering and sensitivity analyses.
 
-Keep the repository layout unchanged:
+## Repository layout
+
+Keep these names unchanged:
 
 ```text
 ULUMiner/
 ├── cities/                         # 100 city-map images
 ├── inputs/                         # 100 focal-neighborhood transaction text files
 ├── JPER_outputs_v3/                # final reference outputs used in the paper
-├── neqFin_outputs/                 # 100 saved negFIN output files used for validation
+├── neqFin_outputs/                 # archived 10% negFIN outputs for validation
 ├── DP_Novak.pdf                    # documentary thesis source
-├── JPER_v3.ipynb                   # main reproducibility notebook
+├── JPER_v3.ipynb                   # main end-to-end reproducibility notebook
 ├── JPER_v3_notes.md                # revision/reproducibility notes
-├── negFIN.py                       # negFIN implementation/source
+├── negFIN.py                       # negFIN implementation
 ├── README.md
 ├── requirements_v3.txt
-└── summary_all_cities.xlsx         # independent saved 10% city-by-itemset matrix
+└── summary_all_cities.xlsx         # archived rounded 10% city-by-itemset matrix
 ```
 
-Then:
+`JPER_outputs_v3/` and `neqFin_outputs/` are reference material. A fresh run never overwrites them.
 
-1. Install Python 3.10 (the retained final manuscript run used Python 3.10.15).
-2. From the repository root, install the required packages:
+## Quick start
 
-   ```bash
-   pip install -r requirements_v3.txt
-   ```
+Python 3.10 is recommended for the closest reproduction of the retained final manuscript run.
 
-3. Start Jupyter from the repository root:
+Create and activate an environment, then install the required packages:
 
-   ```bash
-   jupyter lab
-   ```
+```bash
+pip install -r requirements_v3.txt
+```
 
-4. Open `JPER_v3.ipynb`.
-5. Choose **Run All**.
-6. The notebook creates a new folder named `JPER_reproduced_outputs_v3/`.
-7. At the end, inspect `JPER_reproduced_outputs_v3/reference_reproduction_check.csv` to compare key reproduced outputs with the final reference results included in `JPER_outputs_v3/`.
+Start Jupyter from the repository root:
 
-The notebook deliberately does **not** overwrite `JPER_outputs_v3/`.
+```bash
+jupyter lab
+```
 
-## What each folder/file is for
+Open:
 
-- `inputs/`: the 100 focal-polygon neighborhood transaction files used as the primary analysis input.
-- `neqFin_outputs/`: the 100 saved negFIN outputs used to validate exact re-mining.
-- `JPER_outputs_v3/`: the final v3 outputs used in the revised paper and supplementary material. Treat this folder as read-only reference material.
-- `cities/`: city-map images used by the optional image-thumbnail UMAP visualization at the end of the notebook.
-- `summary_all_cities.xlsx`: independently archived 10% city-by-itemset matrix used for validation.
-- `negFIN.py`: negFIN implementation/source.
-- `DP_Novak.pdf`: documentary source used for historical workflow/buffer provenance.
-- `JPER_v3_notes.md`: notes describing the v3 corrections and public-repository portability changes.
-- `requirements_v3.txt`: package versions for the closest reproduction of the retained final run.
+```text
+JPER_v3.ipynb
+```
 
-## Input integrity checks
+and choose **Restart Kernel and Run All Cells**.
 
-Before analysis, `JPER_v3.ipynb` verifies:
-
-- exactly 100 transaction files in `inputs/`;
-- exactly 100 matching saved negFIN files in `neqFin_outputs/`;
-- deterministic SHA-256 signatures for both complete directories;
-- the SHA-256 checksum of `summary_all_cities.xlsx`; and
-- when `JPER_outputs_v3/source_file_metadata.csv` is available, the per-file transaction hashes recorded in the final reference outputs.
-
-If the inputs do not match the final v3 dataset, the notebook stops rather than silently continuing with mixed or altered data.
-
-## Primary analysis reported in the paper
-
-The notebook reproduces the analysis reported in the revised manuscript:
-
-- 100 selected European urban areas;
-- 290,396 focal-polygon neighborhood transactions;
-- exact 10% minimum support for the primary representation;
-- 1,543 common itemset-support features;
-- row-wise L2 normalization;
-- Ward hierarchical clustering directly in the original 1,543-dimensional feature space;
-- candidate cluster numbers `k=2,...,10`;
-- retained descriptive solution `k=7`;
-- 500 paired 80%-feature subsampling repetitions;
-- exact support-threshold sensitivity at 5%, 7.5%, 10%, 12.5%, and 15%;
-- representation and clustering sensitivity, including road-code removal and artificial-only features; and
-- 54 UMAP parameter/seed combinations used only for visualization and diagnostics.
-
-UMAP coordinates are **not** used to define the primary cluster assignments.
-
-## Reference outputs and fresh reproduction outputs
-
-`JPER_outputs_v3/` contains the final outputs used for the paper. These are included so users can inspect the published/reference results without rerunning the notebook.
-
-A fresh **Run All** writes to:
+The notebook creates:
 
 ```text
 JPER_reproduced_outputs_v3/
 ```
 
-This separation prevents an accidental rerun from changing the reference results.
+All newly generated files are written there.
 
-The final notebook comparison cell writes:
+## What happens during Run All
+
+The notebook performs the following steps in order:
+
+1. verifies the 100 files in `inputs/` and the included `negFIN.py`;
+2. parses and audits all transaction rows;
+3. runs `negFIN.py` at 10% relative minimum support on all 100 cities;
+4. writes the fresh negFIN results to `JPER_reproduced_outputs_v3/negFIN_outputs_10pct/`;
+5. rebuilds `summary_all_cities_from_negFIN_10pct.xlsx`;
+6. independently re-mines exact frequent itemsets at 5%, 7.5%, 10%, 12.5%, and 15% using an Eclat verifier;
+7. checks the fresh 10% negFIN support counts against the independent re-mining;
+8. when the archived validation files are present, compares the fresh negFIN results with `neqFin_outputs/` and the rounded summary with `summary_all_cities.xlsx`;
+9. constructs the exact 100 × 1,543 primary city-by-itemset support matrix;
+10. performs Ward hierarchical clustering directly in the original L2-normalized feature space;
+11. evaluates `k=2,...,10`, including 500 paired feature-subsampling repetitions;
+12. performs representation, support-threshold, road, and non-artificial-land-use sensitivity analyses;
+13. runs the 54 UMAP parameter/seed combinations for diagnostic/visualization purposes; and
+14. compares key reproduced outputs with the reference results in `JPER_outputs_v3/`.
+
+UMAP coordinates are **not** used to define the primary clusters.
+
+## negFIN outputs
+
+The included `negFIN.py` is run directly by the notebook.
+
+Primary setting:
 
 ```text
-JPER_reproduced_outputs_v3/reference_reproduction_check.csv
+relative minimum support = 0.10
 ```
 
-which compares key reproduced results with `JPER_outputs_v3/`.
+A fresh run creates:
 
-## About the displayed notebook results
+```text
+JPER_reproduced_outputs_v3/negFIN_outputs_10pct/
+```
 
-The outputs already displayed inside `JPER_v3.ipynb` are retained from the authors' final manuscript run. The repository was renamed/reorganized afterward for easier public use, so a few retained path messages may show earlier local paths or earlier folder names. This does **not** affect the stored numerical results. Running the notebook refreshes those messages using the current folder layout above.
+The repository's existing:
+
+```text
+neqFin_outputs/
+```
+
+is the archived 10% negFIN result set used for validation only.
+
+The notebook loads a fresh copy of `negFIN.py` for each city because the implementation uses module-level state. This reproduces the behavior of the earlier analysis notebook, which reloaded the module between datasets.
+
+## Exact support versus rounded support
+
+Each negFIN output line contains:
+
+```text
+<itemset> #SUP:<exact integer count> %:<rounded whole percent>
+```
+
+The revised paper uses **exact relative support**:
+
+```text
+exact support count / number of transactions in the city
+```
+
+It does not use the rounded `%:` value for the primary clustering.
+
+The rounded field is reconstructed only to reproduce the historical `summary_all_cities.xlsx` representation and to evaluate rounding sensitivity.
+
+## Main output files from a fresh run
+
+Among the files produced in `JPER_reproduced_outputs_v3/` are:
+
+```text
+negFIN_outputs_10pct/
+negFIN_generation_audit.csv
+negFIN_run_log.txt
+negFIN_generated_vs_reference_validation.csv
+summary_all_cities_from_negFIN_10pct.xlsx
+negFIN_exact_support_matrix_10pct.csv.gz
+raw_transaction_audit.csv
+city_itemset_exact_support_10pct.csv.gz
+primary_cluster_assignments.csv
+primary_k_quality.csv
+primary_feature_stability_paired_runs.csv
+primary_feature_subsample_plan.csv
+exact_support_threshold_sensitivity.csv
+representation_and_geometry_sensitivity.csv
+umap_all_54_runs.csv
+umap_overall_diagnostic_ranges.csv
+cluster_characteristic_itemsets.csv
+reference_reproduction_check.csv
+output_manifest.csv
+```
+
+The complete output inventory is written to `output_manifest.csv`.
+
+## Reference outputs versus reproduced outputs
+
+`JPER_outputs_v3/` contains the final v3 outputs used in the paper and supplementary material. Treat it as read-only.
+
+A fresh user run writes to:
+
+```text
+JPER_reproduced_outputs_v3/
+```
+
+At the end, `reference_reproduction_check.csv` compares key reproduced tables with the included reference results.
+
+Deterministic/core result mismatches stop the notebook. UMAP comparison differences are reported as warnings because even seeded UMAP can show small platform/library differences.
+
+## Input integrity
+
+The notebook verifies the final transaction dataset using a deterministic SHA-256 directory signature. It also verifies the exact `negFIN.py` implementation.
+
+When present, it additionally validates:
+
+- all 100 archived files in `neqFin_outputs/`;
+- `summary_all_cities.xlsx`; and
+- per-file source hashes stored in `JPER_outputs_v3/source_file_metadata.csv`.
+
+This prevents silently mixing files from different experiment versions.
+
+## City-map images
+
+`cities/` contains the city images used by the final image-based UMAP visualization.
+
+The numerical analysis does not depend on these images. If `cities/` is absent, the notebook completes the analytical workflow and skips only the optional thumbnail visualization.
+
+## Reproducibility notes
+
+The outputs already displayed inside `JPER_v3.ipynb` are retained from the authors' final manuscript run. The notebook source was subsequently reorganized for a cleaner public workflow and the explicit negFIN-generation cells were added. Therefore newly added cells do not contain retained output until a user executes **Run All**.
+
+The reference results in `JPER_outputs_v3/` were not regenerated or changed by this repository-portability update.
 
 ## Interpretation limits
 
 Each transaction is an unordered set of land-use codes around one focal polygon. Repeated transaction rows are retained and contribute repeatedly to support, preserving prevalence across focal neighborhoods. Duplicate occurrences of the same class within one transaction were already collapsed upstream.
 
-The archived transaction files do not retain polygon area, geometry, same-class neighbor multiplicity, shared-boundary length, orientation, exact distance, or overlap extent. These unavailable quantities are not reconstructed or imputed.
+The transaction files do not retain polygon area, original geometry, same-class neighbor multiplicity, shared-boundary length, orientation, exact distance, or overlap extent. These unavailable quantities are not reconstructed or imputed.
 
 The seven clusters should therefore be interpreted as descriptive comparative groupings conditional on the stated representation and analytical choices, not as causal planning-system categories, normative rankings, or universal urban typologies.
