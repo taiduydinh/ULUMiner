@@ -195,3 +195,24 @@ Each transaction is an unordered set of land-use codes around one focal polygon.
 The transaction files do not retain polygon area, original geometry, same-class neighbor multiplicity, shared-boundary length, orientation, exact distance, or overlap extent. These unavailable quantities are not reconstructed or imputed.
 
 The seven clusters should therefore be interpreted as descriptive comparative groupings conditional on the stated representation and analytical choices, not as causal planning-system categories, normative rankings, or universal urban typologies.
+
+## Citation
+
+If you use the data, code, notebook, or results from this repository, please cite the associated JPER manuscript:
+
+> Dobesova, Zdena, Tai Dinh, and Pavel Novak. “Exploring Urban Land Use Patterns by Pattern Mining and Unsupervised Learning.” *Journal of Planning Education and Research (JPER)*, 2026. Manuscript submitted for publication.
+
+BibTeX:
+
+```bibtex
+@article{dobesova2026exploring,
+  author  = {Dobesova, Zdena and Dinh, Tai and Novak, Pavel},
+  title   = {Exploring Urban Land Use Patterns by Pattern Mining and Unsupervised Learning},
+  journal = {Journal of Planning Education and Research},
+  year    = {2026},
+  note    = {Manuscript submitted for publication}
+}
+```
+
+Please update the bibliographic details (volume, issue, pages, and DOI) after publication.
+
