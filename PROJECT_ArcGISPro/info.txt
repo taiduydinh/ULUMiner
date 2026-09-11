@@ -1,0 +1,19 @@
+ This zip file contains: 
+• main ArcGIS Pro 3 project JournalProject.aprx
+• toolbox JournalToolbox.atbx:
+	o main processing model SearchDistinctLanduse_SpatialJoin_SingleInput in ModelBuilder
+	o processing model for processing more input layers as batch
+	o 3 Python scripts, which are nested to the model, so they are necessary for the full function of the ModelBuilder models
+• Geodatabase JournalData.gdb with layer from Urban Atlas 2018:
+	o CZ006L2_OLOMOUC_UA2018_UrbanCore
+	o UA_KarlovyVary – small extract for testing
+Follow the help of the model.
+The output results are two files:
+They are: 
+	1. <NameOfInputData>_FreqItemsetsData.txt file with a list of codes.
+	2. <NameOfInputData>_FI_dichotomous_data.xlsx with transaction data.
+
+
+September 2026
+
+

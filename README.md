@@ -14,6 +14,7 @@ ULUMiner/
 ├── inputs/                         # 100 focal-neighborhood transaction text files
 ├── JPER_outputs_v3/                # final reference outputs used in the paper
 ├── neqFin_outputs/                 # archived 10% negFIN outputs for validation
+├── ProjectArcGIS/                  # ArcGIS Pro sample project for transaction generation
 ├── DP_Novak.pdf                    # documentary thesis source
 ├── JPER_v3.ipynb                   # main end-to-end reproducibility notebook
 ├── JPER_v3_notes.md                # revision/reproducibility notes
@@ -181,6 +182,18 @@ This prevents silently mixing files from different experiment versions.
 `cities/` contains the city images used by the final image-based UMAP visualization.
 
 The numerical analysis does not depend on these images. If `cities/` is absent, the notebook completes the analytical workflow and skips only the optional thumbnail visualization.
+
+## ArcGIS Pro preprocessing example
+
+The `ProjectArcGIS/` folder provides a worked ArcGIS Pro example showing how the spatial Urban Atlas polygons can be converted into transaction data before frequent-itemset mining.
+
+The example project was prepared and functionally checked using **Olomouc** data. It includes the processing model derived from the workflow developed by Pavel Novak and a short `info.txt` file describing the contents of the folder.
+
+This ArcGIS Pro example is provided for transparency and for users who want to inspect or reproduce the **spatial preprocessing stage** that precedes the Python notebook. In particular, the project demonstrates the construction of focal-polygon neighborhood transactions using the study's **100 m distance setting**. The distance parameter can also be changed in ArcGIS Pro, which makes the project useful for future experiments with alternative neighborhood distances.
+
+The ArcGIS project is **not required** to reproduce the numerical results reported in the current paper. `JPER_v3.ipynb` starts from the already generated transaction files in `inputs/`. Therefore, users interested only in reproducing the published mining, clustering, and sensitivity analyses can run the notebook directly. Users interested in the upstream GIS workflow can inspect `ProjectArcGIS/` separately.
+
+Because the final archived 100-city transaction files do not contain polygon geometry or alternative-buffer versions, the current paper does not claim a new multi-city buffer-distance robustness experiment. The `ProjectArcGIS/` example provides a practical basis for such future extensions.
 
 ## Reproducibility notes
 
